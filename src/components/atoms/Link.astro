@@ -4,12 +4,13 @@ interface Props {
     label: string,
     classes?: string;
     iconPosition?: string; 
+    [key: string]: any;
 }
 
-const {href, label, classes, iconPosition = 'right'} = Astro.props
+const {href, label, classes, iconPosition = 'right', ...rest} = Astro.props
 ---
 
-<a href={href} class={`${classes} transition duration-150 flex items-center gap-3`}>
+<a href={href} class={`${classes} transition duration-150 flex items-center gap-3 aria-[current=page]:text-accent font-semibold`} {...rest}>
     {iconPosition === 'left' && <slot name="icon"/>}
     {label}
     {iconPosition === 'right' && <slot name="icon"/>}
