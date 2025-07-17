@@ -1,15 +1,15 @@
 ---
 import { Image } from "astro:assets"
-import AboutMain from "../../assets/images/AboutMain.png"
-import AboutAssurance from "../../assets/images/AboutAssurance.png"
+import WhyusMain from "../../assets/images/WhyusMain.png"
+import WhyusAssurance from "../../assets/images/WhyusAssurance.png"
 import PromiseCard from "../molecules/PromiseCard.astro"
 import { Shield, Clock, Heart } from "@lucide/astro";
 ---
 
-<section class="flex flex-col overflow-hidden">
+<section id="whyus" class="flex flex-col overflow-hidden">
     <div class="relative w-full h-[540px]">        
         <Image 
-            src={AboutMain}
+            src={WhyusMain}
             sizes="100vw"
             alt="About image"
             class="w-full h-[540px] object-cover object-center relative"
@@ -49,7 +49,7 @@ import { Shield, Clock, Heart } from "@lucide/astro";
   </div>
 
     <div class="mt-14 max-w-6xl mx-auto">
-        <div class="flex flex-col justify-center items-center max-w-4xl mx-auto text-center">
+        <div class="flex flex-col justify-center items-center max-w-4xl mx-auto text-center mt-4">
             <h2 class="text-4xl font-bold">
                 Our <span class="text-primary">Promise</span>
             </h2>
@@ -57,7 +57,7 @@ import { Shield, Clock, Heart } from "@lucide/astro";
                 We're not just another ride service. We're architects of seamless journeys, crafting premium transportation experiences that set new standards across South Africa.
             </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 px-6 md:px-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 px-6 md:px-10 py-5">
             <PromiseCard label="Saftey First" Icon={Shield} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-primary to-blue-400 text-white"/>
             <PromiseCard label="Saftey First" Icon={Clock} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-accent to-yellow-400 text-black"/>
             <PromiseCard label="Saftey First" Icon={Heart} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-green-600 to-green-400 text-white"/>
@@ -66,7 +66,7 @@ import { Shield, Clock, Heart } from "@lucide/astro";
 
     <div class="relative w-full h-[240px]">
         <Image
-            src={AboutAssurance}
+            src={WhyusAssurance}
             alt="About image"
             class="w-full h-[240px] object-cover object-center relative"
             loading="eager"
