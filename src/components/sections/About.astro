@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets"
 import AboutMain from "../../assets/images/AboutMain.png"
+import AboutAssurance from "../../assets/images/AboutAssurance.png"
 import PromiseCard from "../molecules/PromiseCard.astro"
 import { Shield, Clock, Heart } from "@lucide/astro";
 ---
@@ -60,6 +61,19 @@ import { Shield, Clock, Heart } from "@lucide/astro";
             <PromiseCard label="Saftey First" Icon={Shield} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-primary to-blue-400 text-white"/>
             <PromiseCard label="Saftey First" Icon={Clock} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-accent to-yellow-400 text-black"/>
             <PromiseCard label="Saftey First" Icon={Heart} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-green-600 to-green-400 text-white"/>
+        </div>
+    </div>
+
+    <div class="relative w-full h-[240px]">
+        <Image
+            src={AboutAssurance}
+            alt="About image"
+            class="w-full h-[240px] object-cover object-center relative"
+            loading="eager"
+        />
+        <div class="absolute inset-0 flex flex-col justify-center items-center max-w-4xl mx-auto space-y-4 max-sm:px-5">
+            <p class="text-xl md:text-3xl font-bold text-white text-center">"Every journey tells a story. We make sure yours is extraordinary."</p>
+            <span class="text-accent">— TIMO Rides Team</span>
         </div>
     </div>
 </section>
