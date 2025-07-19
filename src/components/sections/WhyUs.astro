@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets"
-import WhyusMain from "../../assets/images/WhyusMain.png"
-import WhyusAssurance from "../../assets/images/WhyusAssurance.png"
+import WhyusMain from "../../assets/images/WhyusMain.webp"
+import Whyus2 from "../../assets/images/Whyus2.webp"
 import PromiseCard from "../molecules/PromiseCard.astro"
 import { Shield, Clock, Heart } from "@lucide/astro";
 ---
@@ -59,14 +59,14 @@ import { Shield, Clock, Heart } from "@lucide/astro";
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 my-10 px-6 py-5">
             <PromiseCard label="Saftey First" Icon={Shield} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-primary to-blue-400 text-white"/>
-            <PromiseCard label="Saftey First" Icon={Clock} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-accent to-yellow-400 text-black"/>
-            <PromiseCard label="Saftey First" Icon={Heart} text="Rigorous driver screening and regular vehicle maintenance ensure your security." iconClass="bg-gradient-to-br from-green-600 to-green-400 text-white"/>
+            <PromiseCard label="Always Reliable" Icon={Clock} text="Punctual pickups and efficient routes get you there on time, every time.." iconClass="bg-gradient-to-br from-accent to-yellow-400 text-black"/>
+            <PromiseCard label="Personalization" Icon={Heart} text="We tailor every experience to fit your unique needs." iconClass="bg-gradient-to-br from-green-600 to-green-400 text-white"/>
         </div>
     </div>
 
     <div class="relative w-full h-[240px]">
         <Image
-            src={WhyusAssurance}
+            src={Whyus2}
             alt="About image"
             class="w-full h-[240px] object-cover object-center relative"
             loading="eager"
