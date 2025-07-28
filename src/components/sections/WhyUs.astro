@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets"
-import WhyusMain from "../../assets/images/WhyusMain.webp"
-import Whyus2 from "../../assets/images/Whyus2.webp"
+import Whyus from "../../assets/images/Whyus.webp"
+import Whyus2 from "../../assets/images/WhyusQuote.webp"
 import PromiseCard from "../molecules/PromiseCard.astro"
 import { Shield, Clock, Heart } from "@lucide/astro";
 ---
@@ -9,7 +9,7 @@ import { Shield, Clock, Heart } from "@lucide/astro";
 <section id="whyus" class="flex flex-col overflow-hidden">
     <div class="relative w-full h-[540px]">        
         <Image 
-            src={WhyusMain}
+            src={Whyus}
             sizes="100vw"
             alt="About image"
             class="w-full h-[540px] object-cover object-center relative"
