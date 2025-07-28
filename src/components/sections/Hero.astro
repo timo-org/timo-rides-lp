@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import HeroMain from '../../assets/images/Hero.webp';
 import Link from '../atoms/Link.astro';
 import { ArrowRight } from '@lucide/astro';
+
+const whatsAppLink = "https://wa.me/27726948528?text=Hello,%20I%20want%20to%20become%20a%20Timo%20driver";
 ---
 <section id="home" class="max-w-7xl mx-auto overflow-hidden h-screen w-full px-4">
 
@@ -31,7 +33,7 @@ import { ArrowRight } from '@lucide/astro';
          <Link href='#' label='Book a Ride' classes='flex justify-center items-center gap-3 bg-primary px-5 py-3 font-bold text-bg rounded-full text-lg hover:bg-accent hover:text-primary transition duration-300 group max-sm:w-full border-2 border-primary'>
           <ArrowRight size={16} class="text-white group-hover:text-primary transition duration-300" slot={"icon"}/>
         </Link>
-        <Link href='#' label='Become a Driver' classes='flex justify-center items-center border-2 border-accent px-5 py-3 font-bold text-bg rounded-full hover:bg-black/20 transition duration-300 text-lg max-sm:w-full'/>         
+        <Link href={whatsAppLink} label='Become a Driver' classes='flex justify-center items-center border-2 border-accent px-5 py-3 font-bold text-bg rounded-full hover:bg-black/20 transition duration-300 text-lg max-sm:w-full'/>         
       </div>
     </div>
 
